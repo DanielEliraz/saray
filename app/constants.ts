@@ -113,4 +113,15 @@ export const CATEGORIES = [
     image: 'else.png',
     audio: 'else.m4a',
   },
+  ,
+  {
+    name: 'שירותים',
+    image: '',
+    audio: 'bathroom.m4a',
+  },
+  {
+    name: 'לאכול',
+    image: '',
+    audio: 'eat.m4a',
+  },
 ]
