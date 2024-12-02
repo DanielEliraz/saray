@@ -11,7 +11,7 @@ interface Props {
 
 export function CategoriesPage({toCategoryPage}: Props) {
   return (
-    <main style={{direction: 'rtl', padding: '10px'}}>
+    <>
       <Layout>
         {CATEGORIES.map((category) => (
           <CategoryItem
@@ -25,6 +25,6 @@ export function CategoriesPage({toCategoryPage}: Props) {
           />
         ))}
       </Layout>
-    </main>
+    </>
   );
 }

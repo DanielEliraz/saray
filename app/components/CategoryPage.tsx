@@ -10,7 +10,7 @@ interface Props {
 
 export function CategoryPage({toCategories, items}: Props) {
   return (
-    <main style={{direction: 'rtl'}}>
+    <>
       <Box height="100px">
         <Image width="auto" height="100%" src="to-home.png" alt="to-home" onClick={toCategories} />
       </Box>
@@ -19,6 +19,6 @@ export function CategoryPage({toCategories, items}: Props) {
           <CategoryItem key={item.name} {...item} backgroundColor="#f9f7bf"/>
         ))}
       </Layout>
-    </main>
+    </>
   );
 }

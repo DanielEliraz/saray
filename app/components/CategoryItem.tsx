@@ -2,6 +2,7 @@
 
 import {Box, Heading, Cell} from '@wix/design-system';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export interface ItemProps {
   name: string;
@@ -19,16 +20,20 @@ export function CategoryItem({name, audio, image, toCategoryPage, backgroundColo
     const elm = new Audio(audio);
     elm.play();
   }
+
+  const [showAnimation, setShowAnimation] = useState(false);
   return (
     <Cell span={6}>
       <div onClick={() => {
         makeSound();
-        toCategoryPage?.();
+        setShowAnimation(true);
+        setTimeout(() => {
+          toCategoryPage?.();
+        }, 1500)
       }}>
-        <Box direction="vertical" align="center" backgroundColor={backgroundColor} padding="20px" borderRadius="50%">
-          <Box width="130px" height="100px" verticalAlign="middle">
-            <Image width={130} height={100} src={`/${image}`} alt={image}/>
-            {/* <img width="130px" height="100px" src={image} alt={image}/> */}
+        <Box direction="vertical" align="center" backgroundColor={backgroundColor} padding="20px" borderRadius="50%" animation={showAnimation ? "blinker 0.5s linear" : ''}>
+          <Box width="100%" height="12vh" verticalAlign="middle" position="relative">
+            <Image fill src={`/${image}`} alt={image}/>
           </Box>
           <Heading size="medium">{name}</Heading>
         </Box>

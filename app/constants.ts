@@ -17,27 +17,27 @@ export const CATEGORIES = [
       {
         name: 'קרוסלה',
         image: 'carousel.png',
-        audio: 'slide.m4a',
+        audio: 'carousel.m4a',
       },
       {
         name: 'ארגז חול',
         image: 'sandbox.png',
-        audio: 'swing.m4a',
+        audio: 'sandbox.m4a',
       },
       {
         name: 'סולם חבלים',
         image: 'ropes.png',
-        audio: 'slide.m4a',
+        audio: 'ropes.m4a',
       },
       {
         name: 'כדורגל',
         image: 'football.png',
-        audio: 'swing.m4a',
+        audio: 'football.m4a',
       },
       {
         name: 'קיר טיפוס',
         image: 'climbing.png',
-        audio: 'slide.m4a',
+        audio: 'climbing.m4a',
       },
       {
         name: 'משהו אחר',
@@ -50,48 +50,6 @@ export const CATEGORIES = [
     name: 'לנוח',
     image: 'rest.png',
     audio: 'rest.m4a',
-    items: [
-      {
-        name: 'מגלשה',
-        image: 'slide.png',
-        audio: 'slide.m4a',
-      },
-      {
-        name: 'נדנדה',
-        image: 'swing.png',
-        audio: 'swing.m4a',
-      },
-      {
-        name: 'קרוסלה',
-        image: 'carousel.png',
-        audio: 'slide.m4a',
-      },
-      {
-        name: 'ארגז חול',
-        image: 'sandbox.png',
-        audio: 'swing.m4a',
-      },
-      {
-        name: 'סולם חבלים',
-        image: 'ropes.png',
-        audio: 'slide.m4a',
-      },
-      {
-        name: 'כדורגל',
-        image: 'football.png',
-        audio: 'swing.m4a',
-      },
-      {
-        name: 'קיר טיפוס',
-        image: 'climbing.png',
-        audio: 'slide.m4a',
-      },
-      {
-        name: 'משהו אחר',
-        image: 'else.png',
-        audio: 'swing.m4a',
-      },
-    ]
   },
   {
     name: 'שירותים',
@@ -112,16 +70,5 @@ export const CATEGORIES = [
     name: 'משהו אחר',
     image: 'else.png',
     audio: 'else.m4a',
-  },
-  ,
-  {
-    name: 'שירותים',
-    image: '',
-    audio: 'bathroom.m4a',
-  },
-  {
-    name: 'לאכול',
-    image: '',
-    audio: 'eat.m4a',
   },
 ]

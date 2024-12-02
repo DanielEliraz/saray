@@ -9,3 +9,9 @@
 :root {
   --wds-font-family-default: varela;
 } */
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
